@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Le Chrome</title>
+    </head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <style>
+        @font-face {
+            font-family: SThin;
+            src: url(Spartan-Thin.ttf);
+        }
+        
+        a {
+            font-family: SThin;
+            text-decoration: none;
+            color: white;
+            border-radius: 15px;
+        }
+
+        nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensures it stays above other content */
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+        background-color: black;
+    }
+
+        .logo {
+            flex: 0 0 auto;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .w3-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .w3-bar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by oversized elements */
+        }
+</style>
+<body>
+    <nav class="w3-row-padding w3-container w3-black">
+        <div class="logo">
+            <img src="lechromelogo.webp" alt="Le Chrome Logo" style="max-width: 100%;">
+        </div>
+    
+        <div class="w3-nav w3-bar">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="service.html" class="w3-bar-item w3-button">Service</a>
+        </div>
+    </nav>
+
+    <section style="text-align: center; padding: 40px 20px; font-family: SThin;">
+        <!-- Heading -->
+        <h1 style="font-size: 2.5rem; font-weight: bold;">CONTACT US</h1>
+        <p style="font-size: 1.2rem; margin: 20px 0; color: #333;">
+            Want to be part of us? Bright ideas? Contact us.
+        </p>
+    
+        <!-- Decorative Image -->
+        <img src="contactlogo.png" alt="Contact Symbol" style="max-width: 150px; opacity: 0.7; margin: 20px 0;">
+    
+        <!-- Contact Options -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
+            <!-- Visit Us -->
+            <div style="flex: 1; max-width: 250px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; background-color: #f8f8f8; text-align: center;">
+                <img src="loc.png" alt="Visit Us Icon" style="width: 40px; margin-bottom: 10px;">
+                <h2 style="font-size: 1.5rem; margin: 10px 0;">VISIT US</h2>
+                <p style="font-size: 1rem; color: #555;">at Hollywood, Kapasigan</p>
+            </div>
+    
+            <!-- Call Us -->
+            <div style="flex: 1; max-width: 250px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; background-color: #f8f8f8; text-align: center;">
+                <img src="call.png" alt="Call Us Icon" style="width: 40px; margin-bottom: 10px;">
+                <h2 style="font-size: 1.5rem; margin: 10px 0;">CALL US</h2>
+                <p style="font-size: 1rem; color: #555;">09928478058</p>
+            </div>
+    
+            <!-- Email Us -->
+            <div style="flex: 1; max-width: 250px; padding: 20px; border: 1px solid #ddd; border-radius: 15px; background-color: #f8f8f8; text-align: center;">
+                <img src="email.png" alt="Email Us Icon" style="width: 40px; margin-bottom: 10px;">
+                <h2 style="font-size: 1.5rem; margin: 10px 0;">EMAIL US</h2>
+                <p style="font-size: 1rem; color: #555;">LeChrome@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    
+<footer class="w3-row-padding w3-container w3-black w3-center w3-codespan" style="font-family: SThin;">
+    <p>&copy; 2025 LeChrome. All rights reserved.</p>
+</footer>
+</body>
+</html>

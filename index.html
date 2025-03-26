@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Le Chrome</title>
+    </head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <style>
+        @font-face {
+            font-family: SThin;
+            src: url(Spartan-Thin.ttf);
+        }
+        
+        
+        a {
+            font-family: SThin;
+            text-decoration: none;
+            color: white;
+            border-radius: 15px;
+        }
+
+        nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Ensures it stays above other content */
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+        background-color: black;
+    }
+
+        .logo {
+            flex: 0 0 auto;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .w3-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .w3-bar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by oversized elements */
+        }
+        section img {
+            max-height: 100vh;
+            object-fit: cover;
+        }
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <body>
+        <nav class="w3-row-padding w3-container w3-black">
+            <div class="logo">
+                <img src="lechromelogo.webp" alt="Le Chrome Logo" style="max-width: 100%;">
+            </div>
+        
+            <div class="w3-nav w3-bar">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+                <a href="service.html" class="w3-bar-item w3-button">Service</a>
+            </div>
+        </nav>
+    
+        <section style="display: flex; align-items: center; padding: 0; margin: 0;">
+            <div style="flex: 1; padding-left: 50px; display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="font-family: SThin; font-size: 3rem; color: black; margin-bottom: 20px; font-weight: bold;">
+                    EXPLORE
+                </h1>
+                <p style="font-family: SThin; font-size: 1.2rem; color: black; margin-bottom: 30px;">
+                    We, LeChrome provide elegance and style.
+                </p>
+                <button style="
+                    font-family: SThin; 
+                    font-size: 1rem; 
+                    padding: 15px 30px;
+                    width: 250px; 
+                    background-color: black; 
+                    color: white; 
+                    border: none; 
+                    border-radius: 10px; 
+                    cursor: pointer;
+                ">
+                    POPULAR PRODUCTS
+                </button>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: flex-end; align-items: flex-start; margin: 0; padding: 0;">
+                <img src="chrome 1.jpg" alt="Le Chrome Style" style="max-width: 100%; max-height: 85vh; object-fit: cover; border-radius: 0 0 0 25px; margin-bottom: 60px;">
+            </div>
+        </section>
+        <section style="background: linear-gradient(to bottom, black 60%, #222); padding: 0; height: 500px; text-align: center; border-radius: 20px 20px 0 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div style="display: flex; justify-content: center; gap: 5%; align-items: center; width: 80%; margin-bottom: 30px;">
+                <a>
+                    <img src="pop1.png" alt="Product 1" style="width: 70%; height: auto; object-fit: cover; border-radius: 15px;">
+                </a>
+                <a>
+                    <img src="pop2.jpg" alt="Product 2" style="width: 55%; height: auto; object-fit: cover; border-radius: 15px; margin-left: 40px;">
+                </a>
+                <a>
+                    <img src="pop3.png" alt="Product 3" style="width: 70%; height: auto; object-fit: cover; border-radius: 15px;">
+                </a>
+            </div>
+        
+            <a href="service.html">
+            <button style="
+                font-family: SThin; 
+                font-size: 1.2rem; 
+                padding: 10px 20px; 
+                background-color: black; 
+                color: white; 
+                border: none; 
+                border-radius: 8px; 
+                cursor: pointer;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                transition: background-color 0.3s;
+            " onmouseover="this.style.backgroundColor='#444'" onmouseout="this.style.backgroundColor='black'">
+                EXPLORE PRODUCTS
+            </button>
+        </a>
+        </section>
+        
+            
+
+        </section>
+        
+    
+    <footer class="w3-row-padding w3-container w3-black w3-center w3-codespan" style="font-family: SThin;">
+        <p>&copy; 2025 LeChrome. All rights reserved.</p>
+    </footer>
+    </body>
+</html>

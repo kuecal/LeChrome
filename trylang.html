@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeChrome</title>
+    <link rel="stylesheet" href="w3.css"> <!-- External CSS -->
+    <style>
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero-content {
+            max-width: 500px;
+            margin: 20px;
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #444;
+        }
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 10px 20px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar w3-black w3-padding">
+            <div class="logo">
+                <img src="lechromelogo.webp" alt="LeChrome Logo" class="w3-image w3-round">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="w3-button">Home</a></li>
+                <li><a href="#" class="w3-button">About Us</a></li>
+                <li><a href="#" class="w3-button">Contact</a></li>
+                <li><a href="#" class="w3-button">Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero w3-row">
+            <div class="hero-content w3-half w3-padding">
+                <h1 class="w3-xxlarge">EXPLORE</h1>
+                <p class="w3-large">We, LeChrome, provide elegance and style.</p>
+                <a href="#popular-products" class="btn w3-button w3-round w3-black w3-hover-shadow">Popular Products</a>
+            </div>
+            <div class="hero-image w3-half w3-padding">
+                <img src="chromehomepic.jpg" alt="Jewelry showcase" class="w3-image w3-round-large">
+            </div>
+        </section>
+
+        <section class="products w3-light-grey w3-padding" id="popular-products">
+            <div class="products-grid w3-row-padding">
+                <div class="product-item w3-col s12 m4">
+                    <img src="product1.png" alt="Product 1" class="w3-image w3-round-large">
+                </div>
+                <div class="product-item w3-col s12 m4">
+                    <img src="product2.png" alt="Product 2" class="w3-image w3-round-large">
+                </div>
+                <div class="product-item w3-col s12 m4">
+                    <img src="product3.png" alt="Product 3" class="w3-image w3-round-large">
+                </div>
+            </div>
+            <div class="products-button w3-center w3-padding">
+                <a href="#" class="btn w3-button w3-black w3-round w3-hover-shadow">Explore Products</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LeChrome. All rights reserved.</p>
+    </footer>
+</body>
+</html>

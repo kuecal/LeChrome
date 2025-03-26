@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>About Us - Le Chrome</title>
+    <style>
+        @font-face {
+            font-family: SThin;
+            src: url(Spartan-Thin.ttf);
+
+        }
+
+        a {
+            font-family: SThin;
+            text-decoration: none;
+            color: white;
+            border-radius: 15px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: SThin, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            background-color: black;
+            color: white;
+            padding: 0 20px;
+        }
+
+        nav .logo img {
+            width: 40px;
+        }
+
+        nav .w3-bar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .about-section {
+            padding: 0 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-text {
+            flex: 1 1 50%;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: black;
+        }
+
+        .about-image {
+            flex: 1 1 40%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 0;
+        }
+
+        .first-image img {
+            margin-top: 0;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .second-image img {
+            margin-bottom: 0;
+            border-radius: 15px 15px 0 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="lechromelogo.webp" alt="Le Chrome Logo">
+        </div>
+        <div class="w3-nav w3-bar">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="service.html" class="w3-bar-item w3-button">Service</a>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="about-image first-image">
+            <img src="au2.jpg" alt="Le Chrome Fashion" style="height: 500px; width: auto; opacity: 70%;">
+        </div>
+        <div class="about-text" style="font-family: SThin;">
+            <h1 style="margin-top: 15%;">ABOUT US</h1>
+            <p>At Le Chrome, we believe fashion should be bold, eye-catching, and effortlessly stylish. Our designs bring a flashy yet sophisticated touch to any outfit, turning everyday wear into a statement of confidence and beauty. Whether it's casual, formal, or avant-garde, we infuse brilliance into every piece, ensuring you stand out with elegance.</p>
+        </div>
+        <div class="about-text">
+            <p style="margin-top: 27%;">Le Chrome was born from a passion for bold fashion and a desire to redefine style with a touch of brilliance. What started as a vision among creative minds quickly transformed into a brand that blends flashiness with elegance. We saw the need for clothing that not only captures attention but inspires individuality and expression. Join us in making every day a fashion-forward experience.</p>
+        </div>
+        <div class="about-image second-image">
+            <img src="au3.jpg" alt="Le Chrome Accessories" style="height: 70%; width: auto; opacity: 70%; margin-left: 25%;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Le Chrome. All rights reserved.
+    </footer>
+</body>
+</html>
